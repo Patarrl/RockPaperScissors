@@ -1,5 +1,3 @@
-console.log("Hello world from Javascript")
-
 let computerChoices = ["Rock", "Paper", "Scissors"]
 
 let getComputerChoice = () => {
@@ -39,7 +37,7 @@ let playRound = (playerSelection, computerSelection) => {
 
 const game = () => {
 
-    for (let i = 1; i <= 2 ; i++) {
+    for (let i = 1; i <= 5 ; i++) {
         
     let sign = prompt("Choose Rock, Paper Or Scissors")
 
@@ -64,29 +62,4 @@ const game = () => {
 }
 game()
 
-
-// let bye = () => {
-//     return getComputerChoice()
-// }
-// let hi = bye()
-
-// let greetings = function() {
-//     for (let i = 0; i<5; i++) {
-//     console.log(hi, i)
-// }
-// }
-
-// greetings()
-
-// let sign = prompt("Choose Rock, Paper Or Scissors")
-
-// if (sign.toLowerCase() === "rock") {
-//     value = "rock" , console.log("Rock")
-// } else if (sign.toLowerCase() === "paper") {
-//     value = "paper", console.log("Paper")
-// } else if (sign.toLowerCase() === "scissors") {
-//     value = "scissors", console.log("Scissors")
-// } else {
-//     "Type in your choice", console.log("Type in your choice")
-// }
 
