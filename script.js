@@ -7,23 +7,23 @@ let getComputerChoice = () => {
 }
 
 let playRound = (playerSelection, computerSelection) => {
-    if (playerSelection == "Rock" && computerSelection == "Paper") {
+    if (playerSelection == "rock" && computerSelection == "Paper") {
         return "You Lose! Try Again!"
-    } else if (playerSelection == "Rock" && computerSelection == "Rock") {
+    } else if (playerSelection == "rock" && computerSelection == "Rock") {
         return "It is a tie!"
-    } else if (playerSelection == "Rock" && computerSelection == "Scissors") {
+    } else if (playerSelection == "rock" && computerSelection == "Scissors") {
         return "You Won!"
-    } else if (playerSelection == "Paper" && computerSelection == "Scissors") {
+    } else if (playerSelection == "paper" && computerSelection == "Scissors") {
         return "You Lose! Try Again!"
-    } else if (playerSelection == "Paper" && computerSelection == "Rock") {
+    } else if (playerSelection == "paper" && computerSelection == "Rock") {
         return "You Won!"
-    } else if (playerSelection == "Paper" && computerSelection == "Paper") {
+    } else if (playerSelection == "paper" && computerSelection == "Paper") {
         return "It is a tie!"
-    } else if (playerSelection == "Scissors" && computerSelection == "Paper") {
+    } else if (playerSelection == "scissors" && computerSelection == "Paper") {
         return "You Won!"
-    } else if (playerSelection == "Scissors" && computerSelection == "Scissors") {
+    } else if (playerSelection == "scissors" && computerSelection == "Scissors") {
         return "It is a tie!"
-    } else if (playerSelection == "Scissors" && computerSelection == "Rock") {
+    } else if (playerSelection == "scissors" && computerSelection == "Rock") {
         return "You Lose! Try Again!"
     } else {
         return "Please input Correctly!"
@@ -39,16 +39,16 @@ let playRound = (playerSelection, computerSelection) => {
 
 const game = () => {
 
-    for (let i = 1; i <= 5 ; i++) {
+    for (let i = 1; i <= 2 ; i++) {
         
     let sign = prompt("Choose Rock, Paper Or Scissors")
 
     if (sign.toLowerCase() === "rock") {
-        value = "rock" , console.log("Rock")
+        value = "rock" , console.log("Player Choice: Rock")
     } else if (sign.toLowerCase() === "paper") {
-        value = "paper", console.log("Paper")
+        value = "paper", console.log("Player Choice: Paper")
     } else if (sign.toLowerCase() === "scissors") {
-        value = "scissors", console.log("Scissors")
+        value = "scissors", console.log("Player Choice: Scissors")
     } else {
         "Type in your choice", console.log("Type in your choice")
     }
